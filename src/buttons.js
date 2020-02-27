@@ -1,0 +1,7 @@
+export const numberButtons = document.querySelectorAll('[data-buttons-numbers]')
+export const actionButtons = document.querySelectorAll('[data-buttons-actions]')
+export const clearButton = document.querySelector('[data-clear]')
+export const changeValueButton = document.querySelector('[data-change-value]')
+export const equalsButton = document.querySelector('[data-equals]')
+export const previousDisplayStatusTextElement = document.querySelector('[data-previous-status]')
+export const currentDisplayStatusTextElement = document.querySelector('[data-current-status]')

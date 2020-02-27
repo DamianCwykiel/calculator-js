@@ -1,0 +1,129 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-size: 'Cardo', 'regular';
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: 
+    linear-gradient(to left top, #FA956C, #FA956C, rgb(164, 118, 207),rgb(135, 36, 228)),
+    linear-gradient(45deg, #FA956C, #FA956C, rgb(164, 118, 207),rgb(135, 36, 228));
+    background-repeat:repeat-x;
+}
+
+.container {
+    display: grid;
+    font-size: 30rem;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+}
+
+.container > button {
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    outline: none;
+    background-color: #F6F6F6;
+}
+
+.container > button:active {
+    font-size: 1rem;
+}
+
+.container > button:hover {
+    background-color: rgb(226, 226, 226);
+}
+
+.buttons-column1, 
+.change-value,
+.clear
+{
+    background: 
+    linear-gradient(to left top, rgba(226, 226, 226), rgba(238, 236, 236, 0.979), rgba(255, 254, 254, 0.979));
+    border-right: 2px solid rgb(243, 240, 240);
+}
+
+.container > .buttons-column1:hover,
+.container > .buttons-column2:hover,
+.container > .change-value:hover,
+.container > .clear:hover
+
+{
+    background: rgb(226, 226, 226);
+}
+
+.buttons-column2 {
+    background: 
+    linear-gradient(to left top, rgba(219, 218, 218, 0.979), rgba(255, 254, 254, 0.979));
+    border-right: 2px solid rgb(243, 240, 240);
+}
+
+.container > .action-buttons {
+    background: linear-gradient(to top, #8348D8, rgba(95, 30, 185, 0.842));
+    border-left: 3px solid rgba(124, 57, 216, 0.815);
+    color: #FFFFFF
+}
+
+.container > .action-buttons:hover {
+    background-color: rgba(114, 38, 221, 0.815);
+}
+
+.container > .action-button__plus {
+    font-size: 2rem;
+}
+
+.container > .equal {
+    background-color: #E62F89;
+    border: 2px solid rgba(226, 38, 132, 0.925);
+    border-radius: 0 0 8px 0;
+    color: #FFFFFF;
+    font-size: 2rem;
+    grid-column: span 2;
+}
+
+.container > .equal:hover {
+    background-color: rgba(247, 9, 128, 0.918);
+}
+
+.container > .buttons-column1__button-0 {
+    border-radius: 0 0 0 8px;
+}
+
+.container > .buttons-column2__point {
+    font-size: 2rem;
+}
+
+.display {
+    grid-column: 1/ -1;
+    background-color: #212121;
+    border-radius: 8px 8px 0 0 ;
+    display: flex;
+    height: 8rem;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding: 1.2rem;
+    word-wrap: break-word;
+    word-break: break-all; 
+    overflow: hidden;
+}
+
+.previous-status {
+    color: #A26B78;
+    font-size: 1rem;
+}
+
+.current-status {
+    color: #FDFDFD;
+    font-size: 3rem;
+    font-weight: normal;
+    word-wrap: break-word;
+    word-break: break-all; 
+    justify-content: space-around;
+}
+
+/* media-queries */
