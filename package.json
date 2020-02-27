@@ -6,9 +6,9 @@
   "scripts": {
     "server": "live-server public",
     "webpack": "webpack --watch",
-    "build": "babel src/index.js --out-file public/scripts/bundle.js --presets env --watch",
+    "prod-build": "babel src/index.js --out-file public/scripts/bundle.js --presets env --watch",
     "dev-server": "webpack-dev-server --mode development",
-    "prod-build":"webpack --mode production"
+    "build": "webpack --mode production"
   },
   "author": "",
   "license": "ISC",
