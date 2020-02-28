@@ -1,0 +1,28 @@
+.display {
+    align-items: flex-end;
+    background: $disp-bcg;
+    border-radius: $ex-sm $ex-sm 0 0;
+    display: flex;
+    flex-direction: column;
+    grid-column: 1/ -1;
+    height: $lg;
+    justify-content: space-around;
+    overflow: hidden;
+    padding: $sm $sm;
+    word-wrap: break-word;
+    word-break: break-all; 
+}
+
+.previous-status {
+    color: $prev-st;
+    font-size: $sm;
+}
+
+.current-status {
+    color: $cur-st;
+    font-size: $md;
+    font-weight: normal;
+    word-wrap: break-word;
+    word-break: break-all; 
+    justify-content: space-around;
+}

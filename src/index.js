@@ -9,6 +9,7 @@ import { numberButtons,
         previousDisplayStatusTextElement, 
         currentDisplayStatusTextElement 
     } from './buttons'
+import './styles/styles.scss'
 
 //buttons settings
 const calculator = new Calculator(previousDisplayStatusTextElement,

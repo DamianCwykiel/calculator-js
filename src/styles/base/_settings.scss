@@ -1,0 +1,50 @@
+// colors
+
+//display
+$disp-bcg: #212121;
+$prev-st: #A26B78;
+$cur-st: #FDFDFD;
+
+//all-buttons
+    //white
+$white:#FFFFFF;
+$white-bor:rgb(243, 240, 240);
+$white-btt:#F6F6F6;
+$white-ln-gr-1:rgb(226, 226, 226);
+$white-ln-gr-2:rgba(238, 236, 236, 0.979);
+$white-ln-gr-3:rgba(255, 254, 254, 0.979);
+$white-ln-gr-4:rgba(219, 218, 218, 0.979);
+    //purple
+$purple-ln-gr-1: #8348D8;
+$purple-ln-gr-2: rgba(95, 30, 185, 0.842);
+$purple-ln-gr-3: rgba(124, 57, 216, 0.815);
+$purple-ln-gr-4: rgba(114, 38, 221, 0.815);
+    //pink
+$pink-lgt: #E62F89;
+$pink-md: rgba(226, 38, 132, 0.925);
+$pink-drk: rgba(247, 9, 128, 0.918);
+
+//base
+$lin-gr-1: rgb(241, 119, 70);
+$lin-gr-2: rgba(252, 156, 118, 0.712);
+$lin-gr-3: rgb(129, 79, 175);
+$lin-gr-4: rgb(94, 12, 170);
+
+//sizes 
+$mic: 2px;
+$md-mic: 3px;
+$ex-sm: 8px;
+$sm: 1rem;
+$md-sm: 1.5rem;
+$lg-sm: 1.2rem;
+$ex-lg-sm: 2rem;
+$md: 3rem;
+$lg: 9rem;
+$md-lg: 100px;
+$lg-lg: 120px;
+$ex-lg: 30rem;
+
+// height
+$sm-h:1rem;
+$md-h:3rem;
+$lg-h:100vh;

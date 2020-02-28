@@ -1,0 +1,68 @@
+.container > button {
+    border: none;
+    cursor: pointer;
+    font-size: $md-sm;
+    outline: none;
+    background-color: $white-btt;
+    &:hover {
+        background: $white-ln-gr-1;
+    }
+}
+
+.container > button:active {
+    font-size: $sm;
+}
+
+.buttons-column1, 
+.change-value,
+.clear {
+    background: 
+    linear-gradient(to left top, $white-ln-gr-1, $white-ln-gr-2, $white-ln-gr-3);
+    border-right: $mic solid $white-bor;
+    &:hover {
+        background: $white-ln-gr-1;
+    }
+}
+ 
+.buttons-column2 {
+    background: 
+    linear-gradient(to left top, $white-ln-gr-4, $white-ln-gr-3);
+    border-right: $mic solid $white-bor;
+    &:hover {
+        background: $white-ln-gr-1;
+    }
+}
+
+.container > .action-buttons {
+    background: linear-gradient(to top, $purple-ln-gr-1, $purple-ln-gr-2);
+    border-left: $md-mic solid darken $purple-ln-gr-3;
+    color: $white;
+    &:hover {
+        background: darken($purple-ln-gr-4, 18%); 
+    }
+}
+
+.container > .action-button__plus {
+    font-size: $ex-lg-sm;
+}
+
+.container > .equal {
+    background: $pink-lgt;
+    border: $mic solid $pink-md;
+    border-radius: 0 0 $ex-sm 0;
+    color: $white;
+    font-size: $ex-lg-sm;
+    grid-column: span 2;
+    &:hover {
+        background: darken($pink-drk, 10%);
+    }
+}
+
+.buttons-column1__button-0 {
+    @extend button;
+    border-radius: 0 0 0 $ex-sm;
+}
+
+.container .buttons-column2__point {  
+    font-size: $ex-lg-sm;
+}

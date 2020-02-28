@@ -1,0 +1,25 @@
+@import './settings';
+
+* {
+    box-sizing: border-box;
+    font-size: 'Cardo', 'regular';
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: 
+    linear-gradient(to left top, $lin-gr-1, $lin-gr-2, $lin-gr-3, $lin-gr-4),
+    linear-gradient(45deg, $lin-gr-1, $lin-gr-2, $lin-gr-3, $lin-gr-4);
+    background-repeat: repeat-x; 
+}
+
+.container {
+    display: grid;
+    font-size: $ex-lg;
+    justify-content: center;
+    align-content: center;
+    min-height: $lg-h;
+    grid-template-columns: repeat(4, $md-lg);
+    grid-template-rows: minmax($lg-lg, auto) repeat(5, $md-lg);
+}
