@@ -24,7 +24,7 @@ export class Calculator {
       }
     //update the display after click any button
     addNumber(number) {
-        if (number === '.' && this.currentDisplayStatus.includes('.')) return
+        if (number === ',' && this.currentDisplayStatus.includes(',')) return
         if(this.previousDisplayStatus !== '') {
             // this.calculate()
         
@@ -78,8 +78,8 @@ export class Calculator {
         if(isNaN(integerNumber)) {
             showIntegerNumber = ''
         } else {
-            showIntegerNumber = integerNumber.toLocaleString('xx', {
-                maximumFractionDigits: 2})
+            showIntegerNumber = integerNumber.toLocaleString('en', {
+                maximumFractionDigits: 0})
         }
         if(decimalNumber != null) {
             return `${showIntegerNumber}.${decimalNumber}`

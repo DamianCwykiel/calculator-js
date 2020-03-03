@@ -12,7 +12,7 @@ import { numberButtons,
 import './styles/styles.scss'
 
 //buttons settings
-const calculator = new Calculator(previousDisplayStatusTextElement,
+const myCalculator = new Calculator(previousDisplayStatusTextElement,
     currentDisplayStatusTextElement)
 
     const sound = new Audio('/sound/click.wav')
@@ -21,8 +21,8 @@ const calculator = new Calculator(previousDisplayStatusTextElement,
         button.addEventListener('click', () => {
             sound.play()
             //add what's inside a button
-            calculator.addNumber(button.innerText)
-            calculator.updateDisplay()
+            myCalculator.addNumber(button.innerText)
+            myCalculator.updateDisplay()
         })
     })
 //7894561230
@@ -30,21 +30,21 @@ const calculator = new Calculator(previousDisplayStatusTextElement,
         button.addEventListener('click', () => {
             sound.play()
             //add what's inside a button
-            calculator.switchAction(button.innerText)
-            calculator.updateDisplay()
+            myCalculator.switchAction(button.innerText)
+            myCalculator.updateDisplay()
         })
     })
 //=
     equalsButton.addEventListener('click', button => {
         sound.play()
-        calculator.calculate()
-        calculator.updateDisplay()
+        myCalculator.calculate()
+        myCalculator.updateDisplay()
     })
 //C
     clearButton.addEventListener('click', button => {
         sound.play()
-        calculator.clear()
-        calculator.updateDisplay()
+        myCalculator.clear()
+        myCalculator.updateDisplay()
     })
 //+/-
     changeValueButton.addEventListener('click', button => {
@@ -52,6 +52,6 @@ const calculator = new Calculator(previousDisplayStatusTextElement,
         if(changeValueButton === true) {
             return currentDisplayStatus = 0
         }
-        calculator.changeValue()
-        calculator.updateDisplay()
+        myCalculator.changeValue()
+        myCalculator.updateDisplay()
     })
